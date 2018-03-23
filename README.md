@@ -5,10 +5,15 @@
 There is a total of 28 fields/columns. The four pollutants (NO2, O3, SO2 and O3) each has 5 specific columns. Observations totaled to over 1.4 million. 
 
 Each of the five pollutants included has its own five columns of metrics. For instance, for NO2:
+
 NO2 Units : The units measured for NO2
+
 NO2 Mean : The arithmetic mean of concentration of NO2 within a given day
+
 NO2 AQI : The calculated air quality index of NO2 within a given day
+
 NO2 1st Max Value : The maximum value obtained for NO2 concentration in a given day
+
 NO2 1st Max Hour : The hour when the maximum NO2 concentration was recorded in a given day
 
 The total 28 columns are as follows:
