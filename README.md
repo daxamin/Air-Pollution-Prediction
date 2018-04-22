@@ -1,5 +1,7 @@
 # Air-Pollution-Prediction
 
+![poster](https://user-images.githubusercontent.com/15925203/39090661-42c4fdfe-45b3-11e8-8683-743f3773a30a.png)
+
 ## Metadata of the dataset
 
 There is a total of 28 fields/columns. The four pollutants (NO2, O3, SO2 and O3) each has 5 specific columns. Observations totaled to over 1.4 million. 
