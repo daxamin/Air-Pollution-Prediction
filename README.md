@@ -1,49 +1,28 @@
-# Air-Pollution-Prediction
+# Air Pollution Prediction: Time-series clustering & ARIMA
+
+### Link to Data
+https://drive.google.com/drive/folders/1SnDNT0aDZ_vn4ily36M24nbel2Y-U1-8?usp=sharing
+
+### How to run | Clone the whole repository
+
+1. The code files are ipnb (IPython notebook) verion--Python3
+2. You can open the project in any IDE that supports .ipnb Eg. Jupyter/Anaconda [Download here](https://www.anaconda.com/download/). You may need to download some libraries that are used in the programs. If you are using Jupyter/Anaconda, you can install the libraries - *conda install library_name*
+3. The main programs for Month-wise clustering & state-wise clustering can be found in *'main'* folder.
+4. Download the data from [here.](https://drive.google.com/drive/folders/1SnDNT0aDZ_vn4ily36M24nbel2Y-U1-8?usp=sharing)
+5. Change the data folder location path as per your system. The change has to be made in 1st or 2nd cell of [MonthWiseClustering.ipynb](https://github.com/daxamin/Air-Pollution-Prediction/blob/master/main/MonthWiseClustering.ipynb) and [StateWiseClustering.ipynb](https://github.com/daxamin/Air-Pollution-Prediction/blob/master/main/StateWiseClustering.ipynb)
+6. Point 5 applies to other files also, where data folder is being accessed.
+
+### Repository Structure Description | Folder Name - Description
+
+1. **Evaluation** - Includes programs developed for evaluation of different algorithms using libraries, mainly *scikit-learn*
+2. **Reports** - Contains the intermediate reports, poster and final report.
+3. **Main** - Contains four files.
+    1. **CreateTimeSeries** - Pre-process the data and create time-series data ready to be fed into custering algorithms
+    2. **Euclidean vs DTW** - Evaluating Euclidean distance and Dynamic Time Warping for two time-series'.
+    3. **MonthWiseClustering** - Implementing K-Means with DTW on month-wise time-series data.
+    4. **StateWiseClustering** - Implementing K-Means with DTW on state-wise time-series data.
+4. **Preprocessing** - Pre-processing raw data 
+5. **state Data** - Data produced by pre-processing, contains state-wise csv files.
+
 
 ![poster](https://user-images.githubusercontent.com/15925203/39090661-42c4fdfe-45b3-11e8-8683-743f3773a30a.png)
-
-## Metadata of the dataset
-
-There is a total of 28 fields/columns. The four pollutants (NO2, O3, SO2 and O3) each has 5 specific columns. Observations totaled to over 1.4 million. 
-
-Each of the five pollutants included has its own five columns of metrics. For instance, for NO2:
-
-NO2 Units : The units measured for NO2
-
-NO2 Mean : The arithmetic mean of concentration of NO2 within a given day
-
-NO2 AQI : The calculated air quality index of NO2 within a given day
-
-NO2 1st Max Value : The maximum value obtained for NO2 concentration in a given day
-
-NO2 1st Max Hour : The hour when the maximum NO2 concentration was recorded in a given day
-
-The total 28 columns are as follows:
-1. State Code - Code allocated to each state by US EPA
-2. County Code - Code allocated to each county by US EPA
-3. Site Num - Code allocated to each site in a county by US EPA
-4. Address - Address of the monitoring site
-5. State - State name of the monitoring site
-6. County - County name of the monitoring site
-7. City - City of the monitoring site
-8. Date Local - Date and time of monitoring
-9. NO2 Units
-10. NO2 Mean
-11. NO2 AQI
-12. NO2 1st Max Value
-13. NO2 1st Max Hour
-14. O3 Units
-15. O3 Mean
-16. O3 AQI
-17. O3 1st Max Value
-18. O3 1st Max Hour
-19. SO2 Units
-20. SO2 Mean
-21. SO2 AQI
-22. SO2 1st Max Value
-23. SO2 1st Max Hour
-24. CO Units
-25. CO Mean
-26. CO AQI
-27. CO 1st Max Value
-28. CO 1st Max Hour
