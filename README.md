@@ -14,7 +14,7 @@ https://drive.google.com/drive/folders/1SnDNT0aDZ_vn4ily36M24nbel2Y-U1-8?usp=sha
 
 ### Repository Structure Description | Folder Name - Description
 
-1. **Evaluation** - Includes programs developed for evaluation of different algorithms using libraries, mainly *scikit-learn*
+1. **Evaluation** - Includes programs developed for evaluation of different algorithms using libraries, mainly *scikit-learn.*
 LSTM code for evaluating the behavior of our data is taken from https://machinelearningmastery.com.
 2. **Reports** - Contains the intermediate reports, poster and final report.
 3. **Main** - Contains four files.
